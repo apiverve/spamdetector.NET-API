@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new QueryOptions{
+var queryOptions = new spamdetectorQueryOptions{
   "text": "Can you please spare some change?! Desperate!!! Send cash",
   "email": "bankers@fre.323hotlain.net",
   "ip": "122.180.184.182"
@@ -80,11 +80,12 @@ var queryOptions = new QueryOptions{
 ###### Simple Request
 
 ```
-var response = apiClient.execute(queryOptions);
+var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    Console.WriteLine(response);
+    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    Console.WriteLine(jsonResponse);
 }
 ```
 
