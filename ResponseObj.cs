@@ -1,21 +1,48 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
+using Newtonsoft.Json;
 
 namespace APIVerve
 {
-    using Newtonsoft.Json;
+public class ipDetails
+{
+    [JsonProperty("country")]
+    public string country { get; set; }
+
+    [JsonProperty("region")]
+    public string region { get; set; }
+
+}
+
+public class data
+{
+    [JsonProperty("likelySpam")]
+    public bool likelySpam { get; set; }
+
+    [JsonProperty("isDisposableEmail")]
+    public bool isDisposableEmail { get; set; }
+
+    [JsonProperty("isIPBlacklisted")]
+    public bool isIPBlacklisted { get; set; }
+
+    [JsonProperty("parsed")]
+    public bool parsed { get; set; }
+
+    [JsonProperty("ipDetails")]
+    public ipDetails ipDetails { get; set; }
+
+}
 
 public class ResponseObj
 {
     [JsonProperty("status")]
-    public string Status { get; set; }
+    public string status { get; set; }
 
     [JsonProperty("error")]
-    public string Error { get; set; }
+    public object error { get; set; }
 
     [JsonProperty("data")]
-    public object Data { get; set; }
+    public data data { get; set; }
 
 }
 
