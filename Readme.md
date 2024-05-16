@@ -71,9 +71,9 @@ Using the API client, you can perform requests to the API.
 
 ```
 var queryOptions = new spamdetectorQueryOptions{
-  "text": "Can you please spare some change?! Desperate!!! Send cash",
-  "email": "bankers@fre.323hotlain.net",
-  "ip": "122.180.184.182"
+  text: "Can you please spare some change?! Desperate!!! Send cash",
+  email: "bankers@fre.323hotlain.net",
+  ip: "122.180.184.182"
 };
 ```
 
