@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>Spam Detector is a simple tool for detecting spam in a text. It returns the spam score and the spam label.</Description>
+    <Description>Spam Detector is a simple tool for detecting spam in a text. It utilize an email address or IP address to validate the given text against the spam database.</Description>
     <RepositoryUrl>https://github.com/apiverve/spamdetector.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>spam detector; spam detection; spam detect api; spam detector api; spam detection api</PackageTags>
