@@ -25,11 +25,11 @@ public class data
     [JsonProperty("isIPBlacklisted")]
     public bool isIPBlacklisted { get; set; }
 
-    [JsonProperty("parsed")]
-    public bool parsed { get; set; }
-
     [JsonProperty("ipDetails")]
     public ipDetails ipDetails { get; set; }
+
+    [JsonProperty("parsed")]
+    public bool parsed { get; set; }
 
 }
 
