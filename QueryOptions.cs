@@ -5,8 +5,8 @@ using System.Text;
 namespace APIVerve
 {
     public class SpamDetectorQueryOptions {
-public string text { get; set; }
-public string email { get; set; }
-public string ip { get; set; }
+public string Text { get; set; }
+public string Email { get; set; }
+public string Ip { get; set; }
 }
 }
